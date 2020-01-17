@@ -27,7 +27,7 @@
   In this next example, we are accessing the property names themselves. Uncomment the code below, run it and look at what prints in the console.
 */
 
-// for(var key in values) {
+// for(let key in values) {
 //   console.log(key)
 // }
 
@@ -41,8 +41,14 @@
 
 function showValues( obj ) {
   //Code Here
-}
+  let str = ''
 
+  for(let prop in obj){
+    str += obj[prop]
+   // console.log(str)
+  }
+  return str
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -55,7 +61,20 @@ function showValues( obj ) {
 
 //Code Here
 
+function greaterThan10(obj){
+  for(let prop in obj){
+    if(obj[prop] > 10) {
+      obj[prop] = 0
+    }
+  }
+  return obj
+}
 
+let jim = {
+  one: 1,
+  two: 2,
+  three: 3
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -67,6 +86,14 @@ function showValues( obj ) {
 
 //Code Here
 
+function double(obj){
+  console.log(obj)
+  for(let prop in obj){
+    obj[prop] = obj[prop] * 2;
+    console.log(obj)
+  }
+  return obj
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -80,6 +107,8 @@ function showValues( obj ) {
 */
 
 //Code Here
+
+
 
 
 
