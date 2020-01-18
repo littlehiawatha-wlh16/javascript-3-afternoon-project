@@ -70,6 +70,30 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 
 //Code Here
 
+function removeDuplicates(){
+  for(let i = 0; i < workplaceAccidents.length; i++){
+    for(let q = i +1; q < workplaceAccidents.length; q++){
+      console.log(i,q);
+      if(workplaceAccidents[i] === workplaceAccidents[q]){
+        workplaceAccidents.splice(i,1);
+      }
+    }
+  }
+  return workplaceAccidents;
+}
+
+
+
+// // --------Template---- start here then fill i the details----
+// function removeDuplicates(){
+//   for(){
+//     for(){
+//       if(num1 === num2){
+//         Array.splice(index,1)
+//       }
+//     }
+//   }
+// }
 
 
 ////////// PROBLEM 3 //////////
@@ -139,6 +163,12 @@ var myCar = {
 */
 
 //Code Here
+
+function recordCleaner(){
+
+  
+
+}
 
 
 
